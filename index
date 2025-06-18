@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Free TikTok Likes and Fans</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎁 Free TikTok Likes and Fans</h1>
+    <p>Get up to <strong>1,000+ likes or followers</strong> instantly. No password or payment needed!</p>
+
+    <h2>Step 1: Follow @frozenspecture on TikTok</h2>
+    <a href="https://www.tiktok.com/@frozenspecture" target="_blank" class="follow-btn">Follow Now</a>
+    <button id="followedBtn">I Followed</button>
+
+    <div id="step2" style="display:none;">
+      <h2>Step 2: Choose Your Gift</h2>
+      <select id="selectType">
+        <option value="likes">Free Likes</option>
+        <option value="fans">Free Fans</option>
+      </select>
+      <select id="selectAmount">
+        <option value="100">100</option>
+        <option value="250">250</option>
+        <option value="500">500</option>
+      </select>
+      <button id="startBtn">Start</button>
+      <div id="loading" style="display:none;">Processing... Please wait.</div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("followedBtn").onclick = function() {
+      document.getElementById("step2").style.display = "block";
+    };
+
+    document.getElementById("startBtn").onclick = function() {
+      document.getElementById("loading").style.display = "block";
+      setTimeout(() => {
+        alert("Your likes/fans are being sent! Check your account within 24 hours.");
+      }, 3000);
+    };
+  </script>
+</body>
+</html>
